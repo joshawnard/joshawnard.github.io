@@ -11,6 +11,7 @@ import React, { Component, PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './ContentPage.scss';
 import ButtonsSection from '../ButtonsSection';
+import Grid from '../Grid';
 
 class ContentPage extends Component {
 
@@ -33,6 +34,7 @@ class ContentPage extends Component {
           <div dangerouslySetInnerHTML={{ __html: this.props.content || '' }} />
 
           <ButtonsSection></ButtonsSection>
+          <Grid></Grid>
         </div>
       </div>
     );

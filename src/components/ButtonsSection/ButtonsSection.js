@@ -34,6 +34,7 @@ class ButtonsSection extends Component {
           <hr></hr>
 
           <p>This is a paragraph. Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire.</p>
+
           <p>Il trouve ses racines dans une oeuvre de la littérature latine classique, le Lorem Ipsum ce sont tres bonne.</p>
 
           <hr></hr>
