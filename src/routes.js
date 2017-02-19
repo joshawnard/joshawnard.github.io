@@ -13,6 +13,7 @@ import fetch from './core/fetch';
 import App from './components/App';
 import ContentPage from './components/ContentPage';
 import ContactPage from './components/ContactPage';
+import CssPage from './components/CssPage';
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
 import NotFoundPage from './components/NotFoundPage';
@@ -25,6 +26,8 @@ const router = new Router(on => {
   });
 
   on('/contact', async () => <ContactPage />);
+
+  on('/css', async () => <CssPage />);
 
   on('/login', async () => <LoginPage />);
 

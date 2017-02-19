@@ -9,9 +9,11 @@
 
 import React, { Component, PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './ContentPage.scss';
+import s from './CssPage.scss';
+import ButtonsSection from '../ButtonsSection';
+import Grid from '../Grid';
 
-class ContentPage extends Component {
+class CssPage extends Component {
 
   static propTypes = {
     path: PropTypes.string.isRequired,
@@ -29,14 +31,9 @@ class ContentPage extends Component {
       <div className={s.root}>
         <div className={s.container}>
           {this.props.path === '/' ? null : <h1>{this.props.title}</h1>}
-          <div dangerouslySetInnerHTML={{ __html: this.props.content}} />
-
-
-
-        { /*  CONTENT TO BE MOVED LATER GOES HERE */ }
-
-
-
+          <div dangerouslySetInnerHTML={{ __html: this.props.content || '' }} />
+          <ButtonsSection></ButtonsSection>
+          <Grid></Grid>
         </div>
       </div>
     );
@@ -44,4 +41,4 @@ class ContentPage extends Component {
 
 }
 
-export default withStyles(ContentPage, s);
+export default withStyles(CssPage, s);
