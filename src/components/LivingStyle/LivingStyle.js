@@ -1,12 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './CssPage.scss';
-import ButtonsSection from '../ButtonsSection';
-import Grid from '../Grid';
+import s from './LivingStyle.scss';
 
-const title = 'Css Playground';
+const title = 'Living Style Guide Example';
 
-class CssPage extends Component {
+class LivingStyle extends Component {
 
   static contextTypes = {
     onSetTitle: PropTypes.func.isRequired,
@@ -22,8 +20,7 @@ class CssPage extends Component {
       <div className={s.root}>
         <div className={s.container}>
           <h1>{title}</h1>
-          <ButtonsSection></ButtonsSection>
-          <Grid></Grid>
+          <p>Living style stuff here.</p>
         </div>
       </div>
     );
@@ -31,4 +28,4 @@ class CssPage extends Component {
 
 }
 
-export default withStyles(CssPage, s);
+export default withStyles(LivingStyle, s);
