@@ -4,12 +4,31 @@
 
 }
 
-.container {
+.lsgcontainer {
   margin: 0 auto;
-  padding: 0 0 40px;
+  padding: 20px 40px;
   max-width: $max-content-width;
+
+  * {
+  	font-family: 'Montserrat', sans-serif !important;
+  }
 }
+
+//.lsgcontainer {
+  //display: grid;
+  //grid-gap: 10%;
+  //grid-template-columns: 25% 75%;
+  //grid-template-areas: "sidebar content";
+//}
 
 .center {
   text-align: center;
+}
+
+/* TYPOGRAPHY -----------
+---------------------- */
+.callout {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #999;
 }

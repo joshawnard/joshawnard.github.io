@@ -19,7 +19,7 @@ class Header extends Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <Navigation className={s.nav} />
+          <Navigation className={s.headnav} />
           <Link className={s.brand} to="/">CSS Sandbox</Link>
           <div className={s.banner}>
             {/* <h1 className={s.bannerTitle}><b>CSS</b> Sandbox</h1> */}
