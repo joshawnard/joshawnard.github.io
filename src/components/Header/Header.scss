@@ -9,16 +9,16 @@
 
 @import '../variables.scss';
 
-$brand-color: #61dafb;
+$brand-color: #3f95b5;
 
-//.root {
-//  background: #f35852;
-//  color: #fff;
-//}
+.root {
+  // background: #f35852;
+  // color: #fff;
+}
 
 .container {
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 40PX;
   max-width: $max-content-width;
 }
 
@@ -32,7 +32,7 @@ $brand-color: #61dafb;
   margin-left: 10px;
 }
 
-.nav {
+.headnav {
   float: right;
   margin-top: 6px;
 }
@@ -44,9 +44,9 @@ $brand-color: #61dafb;
 .bannerTitle {
   margin: 0;
   padding: 10px;
-  //font-weight: normal;
-  //font-size: 4em;
-  //line-height: 1em;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 1em;
 }
 
 .bannerDesc {

@@ -1,0 +1,50 @@
+@import '../variables.scss';
+
+.root {
+
+}
+
+.lsgcontainer {
+  margin: 0 auto;
+  padding: 20px 40px;
+  max-width: $max-content-width;
+
+  * {
+  	font-family: 'Montserrat', sans-serif !important;
+  }
+
+  code {
+  	font-family: monospace !important;
+	font-size: 90%;
+  }
+}
+
+//.lsgcontainer {
+  //display: grid;
+  //grid-gap: 10%;
+  //grid-template-columns: 25% 75%;
+  //grid-template-areas: "sidebar content";
+//}
+
+.center {
+  text-align: center;
+}
+
+.callout {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #666;
+}
+
+/* TYPOGRAPHY -----------
+---------------------- */
+#typography {
+	
+	h1 {
+	    text-transform: uppercase;
+	    font-family: 'Montserrat', sans-serif;
+	    font-weight: 700;
+	    letter-spacing: 1px;
+	    font-size: 30px;
+	}
+}
