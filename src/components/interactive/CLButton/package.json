@@ -1,0 +1,6 @@
+{
+  "name": "CLButton",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CLButton.js"
+}

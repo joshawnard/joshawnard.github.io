@@ -12,6 +12,11 @@
   * {
   	font-family: 'Montserrat', sans-serif !important;
   }
+
+  code {
+  	font-family: monospace !important;
+	font-size: 90%;
+  }
 }
 
 //.lsgcontainer {
@@ -25,10 +30,21 @@
   text-align: center;
 }
 
-/* TYPOGRAPHY -----------
----------------------- */
 .callout {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #999;
+	color: #666;
+}
+
+/* TYPOGRAPHY -----------
+---------------------- */
+#typography {
+	
+	h1 {
+	    text-transform: uppercase;
+	    font-family: 'Montserrat', sans-serif;
+	    font-weight: 700;
+	    letter-spacing: 1px;
+	    font-size: 30px;
+	}
 }

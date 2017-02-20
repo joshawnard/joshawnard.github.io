@@ -1,0 +1,115 @@
+.article-card {
+
+}
+
+.text-profile {
+	display: inline-block;
+    width: 40%;
+    margin-bottom: 8px;
+    position: relative;
+    padding: 0 4px;
+    height: 225px;
+    margin-right: 20px;
+
+    &:hover {
+    	cursor: pointer;
+    }
+}
+
+.text-inside {
+	background-image: url("./chris_columbus.png");
+	 width: 100%;
+    height: 100%;
+    -ms-background-position-x: center;
+    -ms-background-position-y: top;
+    background-position: center top;
+    background-size: cover;
+
+    &:before {
+		 content: "";
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 4px;
+	    right: 4px;
+	    background: rgba(0,0,0,0.2);
+	    -moz-transition: background .3s linear;
+	    -webkit-transition: background .3s linear;
+	    -o-transition: background .3s linear;
+	    transition: background .3s linear;
+    }
+
+    &:hover {
+    	&:before {
+	      background: rgba(0,0,0,0.4);
+	    }
+
+	    .text-partial-title, .ribbon .label {
+	    	opacity: 0;
+	    }
+	    .text-partial-description p {
+	    	opacity: 1;
+	    }
+    }
+
+    .ribbon {
+    	position: absolute;
+    	bottom: 3px;
+    	left: 4px;
+
+    	.label {
+    		display: inline;
+		    padding: .2em .6em .3em;
+		    font-size: 75%;
+		    font-weight: 400;
+		    line-height: 1;
+		    color: #fff;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: baseline;
+		    border-radius: 0;
+    	}
+    }
+}
+
+.text-partial-title {
+	position: relative;
+   padding: 10px 6px 0 6px;
+
+	h2 {
+	  font-size: 17px;
+     text-shadow: 2px 2px 0 #000;
+     color: white;
+     font-weight: 800;
+     font-style: normal;
+     text-transform: uppercase;
+     margin: 0 0 35px;
+     margin-bottom: 0;
+	}
+	h3 {
+	  font-size: 14px;
+     text-shadow: 1px 1px 0 #000;
+     color: white;
+     font-weight: 400;
+     font-family: 'Lato', sans-serif;
+     text-transform: none;
+     margin: 0 0 35px;
+     margin-bottom: 0;
+     padding-top: 5px
+	}
+}
+
+.text-partial-description p {
+	 color: white;
+    font-size: 13px;
+    position: absolute;
+    font-weight: 400;
+    line-height: 1.2;
+    text-shadow: 1px 1px 0 #000;
+    left: 0;
+    top: 0;
+    padding: 10px 14px;
+    opacity: 0;
+    margin-top: 0;
+}
